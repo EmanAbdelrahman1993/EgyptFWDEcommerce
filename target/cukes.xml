@@ -1,65 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="5" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="19" time="785.698">
-    <testcase classname="F01_Register | users could register with new accounts" name="guest user could register with valid data successfully" time="50.699">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div[class=&quot;result&quot;]&quot;}&#10;  (Session info: chrome=108.0.5359.126)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.7.2', revision: '4d4020c3b7'&#10;System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '19.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [33718a692dc07b512c331bbf63dd6735, findElement {using=css selector, value=div[class=&quot;result&quot;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.126, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\bondok\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52925}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52925/devtoo..., se:cdpVersion: 108.0.5359.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 33718a692dc07b512c331bbf63dd6735" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user go to register page..............................................passed
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="19" time="772.429">
+    <testcase classname="F01_Register | users could register with new accounts" name="guest user could register with valid data successfully" time="90.586">
+        <system-out><![CDATA[Given user go to register page..............................................passed
 When user select gender type................................................passed
 And user enter first name "Eman" and last name "Abdelrahman"................passed
 And user enter date of birth................................................passed
-And user enter email "selenium-cucumber@gmail.com" field....................passed
+And user enter email "testselenium@gmail.com" field.........................passed
 And user fills Password fields "P@ssw0rd" "P@ssw0rd"........................passed
 And user clicks on register button..........................................passed
-Then success message is displayed...........................................failed
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div[class="result"]"}
-  (Session info: chrome=108.0.5359.126)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '19.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [33718a692dc07b512c331bbf63dd6735, findElement {using=css selector, value=div[class="result"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.126, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\bondok\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52925}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52925/devtoo..., se:cdpVersion: 108.0.5359.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 33718a692dc07b512c331bbf63dd6735
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
-	at org.example.pages.P01_register.confirmationMessage(P01_register.java:57)
-	at org.example.stepDefs.D01_registerStepDef.successMessageIsDisplayed(D01_registerStepDef.java:61)
-	at ✽.success message is displayed(file:///C:/Users/bondok/IdeaProjects/demonopcommerce/src/main/resources/features/F01_Register.feature:12)
-]]></failure>
+Then success message is displayed...........................................passed
+]]></system-out>
     </testcase>
-    <testcase classname="F02_Login | users could use login functionality to use their accounts" name="user could login with valid email and password" time="31.201">
+    <testcase classname="F02_Login | users could use login functionality to use their accounts" name="user could login with valid email and password" time="26.573">
         <system-out><![CDATA[Given user go to login page.................................................passed
-When user login with "selenium-cucumber@gmail.com" and "P@ssw0rd"...........passed
+When user login with "testselenium@gmail.com" and "P@ssw0rd"................passed
 And user press on login button..............................................passed
 Then user login to the system successfully..................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="F02_Login | users could use login functionality to use their accounts" name="user could not login with invalid email and password" time="29.093">
+    <testcase classname="F02_Login | users could use login functionality to use their accounts" name="user could not login with invalid email and password" time="29.791">
         <system-out><![CDATA[Given user go to login page.................................................passed
 When user login with "wrong@example.com" and "P@ssw0rd".....................passed
 And user press on login button..............................................passed
 Then user could not login to the system.....................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="F03_currencies | User Check Currency sign" name="User could change the currency" time="32.921">
+    <testcase classname="F03_currencies | User Check Currency sign" name="User could change the currency" time="34.279">
         <system-out><![CDATA[Given user go to home page..................................................passed
 When select Euro currency from the dropdown list............................passed
 Then Euro sign is shown on the 4 products that are displayed in Home page...passed
 ]]></system-out>
     </testcase>
-    <testcase classname="F04_Search | user search for products" name="Logged user will be able to search using product name" time="34.229">
+    <testcase classname="F04_Search | user search for products" name="Logged user will be able to search using product name" time="36.374">
         <failure message="The following asserts failed:&#10;&#9;expected [true] but found [false],&#10;&#9;expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given user logged in........................................................passed
 And user located in home page...............................................passed
 When user enter product name as "book"......................................passed
@@ -76,7 +48,7 @@ java.lang.AssertionError: The following asserts failed:
 	at ✽.search results contain "book" should be displayed(file:///C:/Users/bondok/IdeaProjects/demonopcommerce/src/main/resources/features/F04_Search.feature:8)
 ]]></failure>
     </testcase>
-    <testcase classname="F04_Search | user search for products" name="Logged user will be able to search using product name 2" time="40.323">
+    <testcase classname="F04_Search | user search for products" name="Logged user will be able to search using product name 2" time="31.632">
         <system-out><![CDATA[Given user logged in........................................................passed
 And user located in home page...............................................passed
 When user enter product name as "laptop"....................................passed
@@ -84,7 +56,7 @@ And user press enter........................................................pass
 Then search results contain "laptop" should be displayed....................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="F04_Search | user search for products" name="Logged user will be able to search using product name 3" time="42.288">
+    <testcase classname="F04_Search | user search for products" name="Logged user will be able to search using product name 3" time="31.643">
         <system-out><![CDATA[Given user logged in........................................................passed
 And user located in home page...............................................passed
 When user enter product name as "nike"......................................passed
@@ -92,7 +64,7 @@ And user press enter........................................................pass
 Then search results contain "nike" should be displayed......................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="F04_Search | user search for products" name="Scenario Outline:  Logged user will be able to search for product using sku" time="51.257">
+    <testcase classname="F04_Search | user search for products" name="Scenario Outline:  Logged user will be able to search for product using sku" time="55.843">
         <system-out><![CDATA[Given user logged in........................................................passed
 And user located in home page...............................................passed
 When user enter product sku as "SCI_FAITH"..................................passed
@@ -100,7 +72,7 @@ And user press enter........................................................pass
 Then search result contain "SCI_FAITH" should be displayed..................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="F04_Search | user search for products" name="Scenario Outline:  Logged user will be able to search for product using sku 2" time="50.381">
+    <testcase classname="F04_Search | user search for products" name="Scenario Outline:  Logged user will be able to search for product using sku 2" time="50.601">
         <system-out><![CDATA[Given user logged in........................................................passed
 And user located in home page...............................................passed
 When user enter product sku as "APPLE_CAM"..................................passed
@@ -108,7 +80,7 @@ And user press enter........................................................pass
 Then search result contain "APPLE_CAM" should be displayed..................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="F04_Search | user search for products" name="Scenario Outline:  Logged user will be able to search for product using sku 3" time="56.243">
+    <testcase classname="F04_Search | user search for products" name="Scenario Outline:  Logged user will be able to search for product using sku 3" time="46.076">
         <system-out><![CDATA[Given user logged in........................................................passed
 And user located in home page...............................................passed
 When user enter product sku as "SF_PRO_11"..................................passed
@@ -116,7 +88,7 @@ And user press enter........................................................pass
 Then search result contain "SF_PRO_11" should be displayed..................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="F05_hoverCategories | User hover over on random Category then clicks on it" name="Logged user will be able to select different Categories" time="43.57">
+    <testcase classname="F05_hoverCategories | User hover over on random Category then clicks on it" name="Logged user will be able to select different Categories" time="44.77">
         <system-out><![CDATA[Given user logged in........................................................passed
 And user located in home page...............................................passed
 When user selects any random category.......................................passed
@@ -124,7 +96,7 @@ And user selects any sub-category...........................................pass
 Then page title should contains category or sub-category name...............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="F06_homeSliders |HomePage slider" name="User can navigate to products through first slider" time="31.132">
+    <testcase classname="F06_homeSliders |HomePage slider" name="User can navigate to products through first slider" time="34.012">
         <failure message="The following asserts failed:&#10;&#9;expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given user go to home page..................................................passed
 And user scroll down........................................................passed
 When user click on first slider.............................................passed
@@ -139,7 +111,7 @@ java.lang.AssertionError: The following asserts failed:
 	at ✽.user should be directed to "https://demo.nopcommerce.com/nokia-lumia-1020"(file:///C:/Users/bondok/IdeaProjects/demonopcommerce/src/main/resources/features/F06_homeSliders.feature:8)
 ]]></failure>
     </testcase>
-    <testcase classname="F06_homeSliders |HomePage slider" name="User can navigate to products through second slider" time="34.45">
+    <testcase classname="F06_homeSliders |HomePage slider" name="User can navigate to products through second slider" time="35.679">
         <failure message="The following asserts failed:&#10;&#9;expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given user go to home page..................................................passed
 And user scroll down........................................................passed
 When user click on second slider............................................passed
@@ -154,21 +126,21 @@ java.lang.AssertionError: The following asserts failed:
 	at ✽.user should be directed to "https://demo.nopcommerce.com/iphone-6"(file:///C:/Users/bondok/IdeaProjects/demonopcommerce/src/main/resources/features/F06_homeSliders.feature:14)
 ]]></failure>
     </testcase>
-    <testcase classname="F07_followUs | users could open followUs links" name="user opens facebook link" time="47.606">
+    <testcase classname="F07_followUs | users could open followUs links" name="user opens facebook link" time="41.585">
         <system-out><![CDATA[Given user go to home page..................................................passed
 When user opens facebook link...............................................passed
 And user moves to new tab...................................................passed
 Then "https://www.facebook.com/nopCommerce" is opened in new tab............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="F07_followUs | users could open followUs links" name="user opens twitter link" time="52.223">
+    <testcase classname="F07_followUs | users could open followUs links" name="user opens twitter link" time="44.124">
         <system-out><![CDATA[Given user go to home page..................................................passed
 When user opens twitter link................................................passed
 And user moves to new tab...................................................passed
 Then "https://twitter.com/nopCommerce" is opened in new tab.................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="F07_followUs | users could open followUs links" name="user opens rss link" time="21.18">
+    <testcase classname="F07_followUs | users could open followUs links" name="user opens rss link" time="35.131">
         <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given user go to home page..................................................passed
 When user opens rss link....................................................passed
 And user moves to new tab...................................................passed
@@ -184,27 +156,27 @@ java.lang.AssertionError: expected [true] but found [false]
 	at ✽."https://demo.nopcommerce.com/new-online-store-is-open" is opened in new tab(file:///C:/Users/bondok/IdeaProjects/demonopcommerce/src/main/resources/features/F07_followUs.feature:19)
 ]]></failure>
     </testcase>
-    <testcase classname="F07_followUs | users could open followUs links" name="user opens youtube link" time="82.186">
+    <testcase classname="F07_followUs | users could open followUs links" name="user opens youtube link" time="48.692">
         <system-out><![CDATA[Given user go to home page..................................................passed
 When user opens youtube link................................................passed
 And user moves to new tab...................................................passed
 Then "https://www.youtube.com/user/nopCommerce" is opened in new tab........passed
 ]]></system-out>
     </testcase>
-    <testcase classname="F08_Wishlist | Wishlist" name="Logged user could add different products to Wishlist[1]" time="21.216">
+    <testcase classname="F08_Wishlist | Wishlist" name="Logged user can add products to Wishlist" time="20.47">
         <system-out><![CDATA[Given user logged in........................................................passed
 And user go to home page....................................................passed
-When user click add to wishlist button......................................passed
-Then product should be added to wishlist....................................passed
+When user clicks add to wishlist button at the selected product.............passed
+Then product added to wishlist..............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="F08_Wishlist | Wishlist" name="Logged user could add different products to Wishlist[2]" time="31.48">
+    <testcase classname="F08_Wishlist | Wishlist" name="Logged user can add products to Wishlist 2" time="31.232">
         <system-out><![CDATA[Given user logged in........................................................passed
 And user go to home page....................................................passed
-When user click add to wishlist button......................................passed
-And user wait until success message disappears..............................passed
-And user clicks wishlist tab................................................passed
-Then product quantity in wishlist should be > 0.............................passed
+When user clicks add to wishlist button at the selected product.............passed
+And wait until this success message with green color to disappears..........passed
+And user click on "Wishlist" Tab on the top of the page.....................passed
+Then verify product quantity in wishlist greater than 0.....................passed
 ]]></system-out>
     </testcase>
 </testsuite>

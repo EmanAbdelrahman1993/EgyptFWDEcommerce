@@ -4,12 +4,12 @@ Feature: F08_Wishlist | Wishlist
   Background:
     Given user logged in
     And   user go to home page
-    When  user click add to wishlist button
+    When  user clicks add to wishlist button at the selected product
 
-  Scenario: Logged user could add different products to Wishlist[1]
-    Then  product should be added to wishlist
+  Scenario: Logged user can add products to Wishlist
+    Then  product added to wishlist
 
-  Scenario: Logged user could add different products to Wishlist[2]
-    And   user wait until success message disappears
-    And   user clicks wishlist tab
-    Then  product quantity in wishlist should be > 0
+  Scenario: Logged user can add products to Wishlist
+    And   wait until this success message with green color to disappears
+    And   user click on "Wishlist" Tab on the top of the page
+    Then  verify product quantity in wishlist greater than 0
